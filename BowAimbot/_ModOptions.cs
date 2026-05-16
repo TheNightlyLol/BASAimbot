@@ -42,22 +42,22 @@ namespace BasAimbot
         [ModOptionButton]
         [ModOption("Wall Bang", "Enables/Disables wall bang")]
         public static bool starWallBang = false;
-        
+
         // -- Shard Striker Options -- 
-        //[ModOptionCategory("Shard Striker", 3)]
-        //[ModOption("Enabled", "Enables/Disables the aimbot for the Shard Striker")]
-        //public static bool ShardEnabled = true;
+        [ModOptionCategory("Shard Striker", 3)]
+        [ModOption("Enabled", "Enables/Disables the aimbot for the Shard Striker")]
+        public static bool ShardEnabled = true;
 
-        //[ModOptionCategory("Shard Striker", 3)]
-        //[ModOptionFloatValues(0.1f, 10f, 0.1f)]
-        //[ModOption("Seeking Speed", interactionType = ModOption.InteractionType.Slider)]
-        //public static float ShardSeekingSpeed = 1f;
+        [ModOptionCategory("Shard Striker", 3)]
+        [ModOptionFloatValues(0.1f, 10f, 0.1f)]
+        [ModOption("Seeking Speed", interactionType = ModOption.InteractionType.Slider)]
+        public static float ShardSeekingSpeed = 1f;
 
-        //[ModOptionCategory("Shard Striker", 3)]
-        //[ModOptionButton]
-        //[ModOption("Wall Bang", "Enables/Disables wall bang")]
-        //public static bool ShardWallBang = false;
-        
+        [ModOptionCategory("Shard Striker", 3)]
+        [ModOptionButton]
+        [ModOption("Wall Bang", "Enables/Disables wall bang")]
+        public static bool ShardWallBang = false;
+
         // -- General Options --
 
         [ModOptionCategory("General", 4)]
