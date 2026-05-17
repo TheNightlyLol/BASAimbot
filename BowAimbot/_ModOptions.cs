@@ -44,6 +44,7 @@ namespace BasAimbot
         public static bool starWallBang = false;
 
         // -- Shard Striker Options -- 
+
         [ModOptionCategory("Shard Striker", 3)]
         [ModOption("Enabled", "Enables/Disables the aimbot for the Shard Striker")]
         public static bool ShardEnabled = true;
@@ -75,9 +76,6 @@ namespace BasAimbot
         [ModOptionSlider]
         [ModOption("Max Distance", tooltip = "Max distance to the creature")]
         public static int maxDistanceToCreature = 100;
-
-
-
         internal static ModOptionString[] AimPartValues() => new[]
         {
             new ModOptionString("Closest Part", "Closest Part"),
@@ -111,7 +109,5 @@ namespace BasAimbot
             ["Left Foot"] = new AimPartDefinition { PartType = RagdollPart.Type.LeftFoot, GetPosition = (t, c) => t.position },
             ["Right Foot"] = new AimPartDefinition { PartType = RagdollPart.Type.RightFoot, GetPosition = (t, c) => t.position },
         };
-
-
     }
 }
